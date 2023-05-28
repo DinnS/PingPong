@@ -1,4 +1,4 @@
-### This is a simple ping pong game project developed in C++ using the SFML graphical library. The game allows the player to control paddle , hit balls with it and break bricks.
+### This is a simple ping pong game project developed in C++ using the SFML graphical library. The game allows the player to control paddle , hit ball with it and break bricks.
 
 
 # Game Screenshot
@@ -14,7 +14,7 @@ Currently, there is no
 Clone or download the repository: git clone https://github.com/DinnS/PingPong
 
 
-# Usage
+# The rules of the game   
 - Use the controls to move the paddle and hit the ball.
 - The game continues until the player misses one ball or breaks all the bricks.
 
