@@ -3,11 +3,12 @@
 
 using namespace sf;
 
-class Bat {
+class Paddle {
 private:
-	Vector2f m_Position;
+	Vector2f position;
 
 	RectangleShape shape;
+
 	float speed = 1000.0f;
 	bool movingRight = false;
 	bool movingLeft = false;
@@ -15,7 +16,7 @@ private:
 
 public:
 
-	Bat(float startX, float startY);
+	Paddle(float startX, float startY);
 
 	FloatRect getPosition();
 	RectangleShape getShape();
