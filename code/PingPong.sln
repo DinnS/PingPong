@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33122.133
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PingPong", "PingPong.vcxproj", "{20F096BC-F7C2-4CBD-B00F-5B8F2BF8DBD1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{71707CB1-63B4-4276-8AF0-7E4FF8DDF1A3}"
+	ProjectSection(SolutionItems) = preProject
+		Bat.h = Bat.h
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{20F096BC-F7C2-4CBD-B00F-5B8F2BF8DBD1}.Debug|x64.ActiveCfg = Debug|x64
+		{20F096BC-F7C2-4CBD-B00F-5B8F2BF8DBD1}.Debug|x64.Build.0 = Debug|x64
+		{20F096BC-F7C2-4CBD-B00F-5B8F2BF8DBD1}.Debug|x86.ActiveCfg = Debug|Win32
+		{20F096BC-F7C2-4CBD-B00F-5B8F2BF8DBD1}.Debug|x86.Build.0 = Debug|Win32
+		{20F096BC-F7C2-4CBD-B00F-5B8F2BF8DBD1}.Release|x64.ActiveCfg = Release|x64
+		{20F096BC-F7C2-4CBD-B00F-5B8F2BF8DBD1}.Release|x64.Build.0 = Release|x64
+		{20F096BC-F7C2-4CBD-B00F-5B8F2BF8DBD1}.Release|x86.ActiveCfg = Release|Win32
+		{20F096BC-F7C2-4CBD-B00F-5B8F2BF8DBD1}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A386051F-8BC8-4CCE-944D-A289ACF92226}
+	EndGlobalSection
+EndGlobal
