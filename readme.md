@@ -11,10 +11,6 @@ Currently, there is no
 - Simple controls for easy gameplay.
 
 
-# Installation
-Clone or download the repository: git clone https://github.com/DinnS/PingPong
-
-
 # The rules of the game   
 - Use the controls to move the paddle and hit the ball.
 - The game continues until the player misses one ball or breaks all the bricks.
@@ -23,15 +19,15 @@ Clone or download the repository: git clone https://github.com/DinnS/PingPong
 # Controls
 ### Player: 
 - A, left arrow  -  move left
-- D, right arrow =  move right
-
-
-# License
-Free to use
+- D, right arrow -  move right
 
 
 ## Acknowledgments
 For this project, I use information from the book **"Beggining C++ Game Programming Second Edition" by John Horton**
+
+
+# License
+Free to use
 
 
 # Contact
