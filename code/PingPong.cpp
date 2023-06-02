@@ -135,7 +135,6 @@ int main() {
 		}
 
 		if (ball.getPosition().intersects(paddle.getPosition())) {
-			//ball.reboundPaddle(paddle.getPosition());
 			ball.reboundPaddleOrTop();
 		}
 

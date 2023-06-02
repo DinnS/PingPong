@@ -1,6 +1,5 @@
 # Summary 
-This is a simple ping pong game project developed in C++ using the SFML graphical library. The game allows the player to control paddle , hit ball with it and break bricks.
-
+This is a simple ping pong game project developed in C++ using the SFML graphical library. The game allows the player to control paddle and hit ball.
 
 # Features
 - Classic ping pong gameplay.
@@ -9,7 +8,7 @@ This is a simple ping pong game project developed in C++ using the SFML graphica
 
 # The rules of the game   
 - Use the controls to move the paddle and hit the ball.
-- The game continues until the player misses one ball or breaks all the bricks.
+- The score is changed to 0 if lives = 0.
 
 
 # Controls

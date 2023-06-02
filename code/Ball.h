@@ -24,7 +24,6 @@ public:
 	void reboundSides();
 	void reboundPaddleOrTop();
 
-	void reboundPaddle(FloatRect paddlePosition);
 
 	void reboundBottom();
 
