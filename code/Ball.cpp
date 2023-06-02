@@ -1,10 +1,11 @@
 #include "Ball.h"
+#include "math.h"
 
 Ball::Ball(float startX, float startY) {
 	position.x = startX;
 	position.y = startY;
 
-	shape.setSize(sf::Vector2f(30,30));
+	shape.setRadius(25.f);
 	shape.setPosition(position);
 }
 
@@ -12,7 +13,7 @@ FloatRect Ball::getPosition() {
 	return shape.getGlobalBounds();
 }
 
-RectangleShape Ball::getShape() {
+CircleShape Ball::getShape() {
 	return shape;
 }
 
@@ -28,9 +29,18 @@ void Ball::reboundPaddleOrTop() {
 	directionY = -directionY;
 }
 
+void Ball::reboundPaddle(FloatRect paddlePosition) {
+	float centerBall = getPosition().left + (getPosition().width / 2);
+	float centerPaddle = paddlePosition.left + (paddlePosition.width / 2);
+	float pointCollision = centerBall - centerPaddle;
+
+	directionX = cos(pointCollision);
+	directionY = -directionY;
+}
+
 void Ball::reboundBottom() {
 	position.x = 1920 / 2;
-	position.y = shape.getSize().x;
+	position.y = shape.getRadius() * 3;
 	//directionY = -directionY;
 }
 

@@ -1,4 +1,4 @@
-#include "Paddle.h"
+	#include "Paddle.h"
 #include "Ball.h"
 #include <sstream>
 #include <cstdlib>
@@ -32,7 +32,7 @@ int main() {
 	
 
 	// Init class
-	Paddle paddle(1920 / 2, 1080 - 20);
+	Paddle paddle(1920 / 2, 1080 - 100);
 	
 	Ball ball(1920 / 2, 0);
 
@@ -70,7 +70,7 @@ int main() {
 
 
 		// Movement player
-		if (Keyboard::isKeyPressed(Keyboard::A) || Keyboard::isKeyPressed(Keyboard::Left)) {
+		if ((Keyboard::isKeyPressed(Keyboard::A) || Keyboard::isKeyPressed(Keyboard::Left)) && (paddle.getPosition().left > 0)) {
 			paddle.moveLeft();
 		}
 		else {
@@ -78,7 +78,7 @@ int main() {
 		}
 
 
-		if (Keyboard::isKeyPressed(Keyboard::D) || Keyboard::isKeyPressed(Keyboard::Right)) {
+		if ((Keyboard::isKeyPressed(Keyboard::D) || Keyboard::isKeyPressed(Keyboard::Right)) && (paddle.getPosition().left + paddle.getPosition().width < window.getSize().x)) {
 			paddle.moveRight();
 		}
 		else {
@@ -130,11 +130,12 @@ int main() {
 			score++;
 		}
 
-		if (ball.getPosition().left < 0 || ball.getPosition().left + ball.getPosition().width > window.getSize().x) {
+		if (ball.getPosition().left < 0 || ball.getPosition().left + ball.getPosition().width > window.getSize().x ) {
 			ball.reboundSides();
 		}
 
 		if (ball.getPosition().intersects(paddle.getPosition())) {
+			//ball.reboundPaddle(paddle.getPosition());
 			ball.reboundPaddleOrTop();
 		}
 
