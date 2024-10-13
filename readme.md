@@ -24,7 +24,3 @@ For this project, I use information from the book **"Beggining C++ Game Programm
 # License
 Free to use
 
-
-# Contact
-If you have any questions or inquiries about the project, feel free to contact **dinsunsed@gmail.com**.
-
